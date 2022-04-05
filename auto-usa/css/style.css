@@ -1,45 +1,132 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -129,6 +216,12 @@ a {
     background: #5A0D67;
     padding: 15px 55px;
     margin-bottom: 70px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #5A0D67;
 }
 
 .header__social {
@@ -143,4 +236,130 @@ a {
     position: absolute;
     right: 0;
     bottom: -290px;
+}
+
+
+
+
+
+
+
+
+.services {
+    padding-top: 300px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #21062A;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #21062A;
+    position: absolute;
+    top: 25px;
+    margin-left: 15px;
+}
+
+.services__inner {
+    display: flex;
+    gap: 96px;
+    margin-bottom: 100px;
+}
+
+.services__content {
+    width: 505px;
+}
+
+.services__content-title {
+    font-size: 24px;
+    line-height: 36px;
+    color: #5A0D67;
+    margin-bottom: 12px;
+}
+
+.services__content-textbox {
+    margin-bottom: 57px;
+}
+
+.services__content-text {
+    margin-bottom: 12px;
+}
+
+.btn--decor {
+    margin-top: -7px;
+    color: #fff;
+    border: 2px solid #5A0D67;
+    position: relative;
+}
+
+.btn--decor::after {
+    position: absolute;
+    content: 'ЖМИ';
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    margin-left: 139px;
+}
+
+.btn--decor::before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    top: 25px;
+    right: -75px;
+    background-color: #C4C4C4;
+}
+
+.services__list {
+    counter-reset: myCounter;
+}
+
+.services__item {
+    counter-increment: myCounter;
+    margin-bottom: 12px;
+    width: 450px;
+    height: 75px;
+    padding: 10px 15px 10px 113px;
+    border: 2px solid #C4C4C4;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.services__item:hover {
+    width: 500px;
+    border: 2px solid #5A0D67;
+}
+
+.services__item:hover .services__item-title,
+.services__item:hover::before {
+    color: #5A0D67;
+}
+
+.services__item::before {
+    content: '0' counter(myCounter);
+    position: absolute;
+    transform: rotate(270deg);
+    
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 53px;
+    color: #C4C4C4;
+    left: 35px;
+    transition: all 0.5s;
+}
+
+.services__item-title {
+    font-size: 24px;
+    font-weight: 300;
 }
