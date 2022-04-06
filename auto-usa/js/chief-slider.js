@@ -393,8 +393,6 @@ ChiefSlider.prototype._move = function() {
       activeIndex.push(newIndex);
     }
     // puncoviy
-          console.log('penised back')
-
           let centralSlide = document.querySelector('.slider-center');
           centralSlide.classList.remove('slider-center');
 

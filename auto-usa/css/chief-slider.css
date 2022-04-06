@@ -17,6 +17,7 @@
 
 .slider__wrapper {
   overflow: hidden;
+  position: relative;
 }
 
 .slider__items {
@@ -35,6 +36,7 @@
 
   border: 1px solid #C4C4C4;
   text-align: center;
+  padding-bottom: 16px;
 }
 
 /* кнопки влево и вправо */
@@ -111,18 +113,19 @@
 .slider__indicators li {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 30px;
-  height: 5px;
-  margin-right: 3px;
-  margin-left: 3px;
+  width: 50px;
+  height: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: -25px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #C4C4C4;
   background-clip: padding-box;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
 
 .slider__indicators li.active {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #5A0D67;
 }
