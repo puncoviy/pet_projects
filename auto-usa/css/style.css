@@ -799,6 +799,17 @@ a {
         .contacts__input {
             width: 90%;
         }
+
+        .footer {
+            background-color: transparent;
+        }
+
+        .footer__inner {
+            background-color: #21062A;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
     }
     /* ----------------------------- */
     @media (max-width: 520px) {
