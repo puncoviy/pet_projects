@@ -25,7 +25,7 @@
         <div class="container">
             <div class="header__top">
                 <a class="logo" href="#">
-                    <img src="./img/logo.svg" alt="logo" class="logo__img">
+                    <img class="logo__img" src="./img/logo.svg" alt="logo">
                 </a>
                 <a class="header__link phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
             </div>
@@ -34,7 +34,7 @@
                 <h1 class="header__title">авто из сша “под ключ”</h1>
                 <h2 class="header__subtitle">ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%</h2>
                 <p class="header__text">Подбор, покупка, доставка, растаможка, ремонт, оформление по договору</p>
-                <a class="btn" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
+                <a class="btn header__btn" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
                 <div class="social header__social">
                     <a class="social__link" href="https://ria.ru/20220314/instagram-1777974202.html" target="_blank">
                         <img class="social__img" src="./img/icon/instagram.svg" alt="insta">
@@ -153,49 +153,41 @@
                     <div class="slider__wrapper">
                         <div class="slider__items">
                             <div class="slider__item">
-                                <!-- Контент 1 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/1.jpg" alt="auto-1">
                                 <h4 class="carousel__item-titl">INFINITI QX50 2016 г.</h4>
                                 <p class="carousel__item-price">Экономия 4500 $</p>
                             </div>
                             <div class="slider__item">
-                                <!-- Контент 2 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/2.jpg" alt="auto-2">
                                 <h4 class="carousel__item-titl"> TESLA MODEL 3 2018 г.</h4>
                                 <p class="carousel__item-price">Экономия 5500 $</p>
                             </div>
                             <div class="slider__item">
-                                <!-- Контент 3 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/3.jpg" alt="auto-3">
                                 <h4 class="carousel__item-titl"> TESLA MODEL 3 2018 г.</h4>
                                 <p class="carousel__item-price">Экономия 5500 $</p>
                             </div>
                             <div class="slider__item">
-                                <!-- Контент 4 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/1.jpg" alt="auto-1">
                                 <h4 class="carousel__item-titl">INFINITI QX50 2016 г.</h4>
                                 <p class="carousel__item-price">Экономия 4500 $</p>
                             </div>
                             <div class="slider__item">
-                                <!-- Контент 5 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/2.jpg" alt="auto-2">
                                 <h4 class="carousel__item-titl"> TESLA MODEL 3 2018 г.</h4>
                                 <p class="carousel__item-price">Экономия 5500 $</p>
                             </div>
                             <div class="slider__item">
-                                <!-- Контент 6 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/1.jpg" alt="auto-1">
                                 <h4 class="carousel__item-titl">INFINITI QX50 2016 г.</h4>
                                 <p class="carousel__item-price">Экономия 4500 $</p>
                             </div>
                             <div class="slider__item">
-                                <!-- Контент 7 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/2.jpg" alt="auto-2">
                                 <h4 class="carousel__item-titl"> TESLA MODEL 3 2018 г.</h4>
                                 <p class="carousel__item-price">Экономия 5500 $</p>
                             </div>
                             <div class="slider__item">
-                                <!-- Контент 8 слайда -->
                                 <img class="carousel__item-img" src="./img/carousel/3.jpg" alt="auto-3">
                                 <h4 class="carousel__item-titl"> TESLA MODEL 3 2018 г.</h4>
                                 <p class="carousel__item-price">Экономия 5500 $</p>
@@ -224,20 +216,22 @@
                 <div class="contacts__inner">
                     <div class="contacts__info">
                         <h2 class="title">КОНТАКТЫ</h2>
-                        <dl class="contacts__item">
-                            <dt class="contacts__item-subtitle">Адрес</dt>
-                            <dd>Киев, Подол</dd>
-                            <dd>ул. Константиновская, д.71</dd>
-                        </dl>
-                        <dl class="contacts__item">
-                            <dt class="contacts__item-subtitle">Время работы</dt>
-                            <dd>Пн-Сб: с 9:00 до 19:00,</dd>
-                            <dd>Вс: выходной</dd>
-                        </dl>
-                        <dl class="contacts__item">
-                            <dt class="contacts__item-subtitle">Телефон</dt>
-                            <dd>+38 (050) 555 66 77</dd>
-                        </dl>
+                        <div class="contacts__box">
+                            <dl class="contacts__item">
+                                <dt class="contacts__item-subtitle">Адрес</dt>
+                                <dd>Киев, Подол</dd>
+                                <dd>ул. Константиновская, д.71</dd>
+                            </dl>
+                            <dl class="contacts__item">
+                                <dt class="contacts__item-subtitle">Время работы</dt>
+                                <dd>Пн-Сб: с 9:00 до 19:00,</dd>
+                                <dd>Вс: выходной</dd>
+                            </dl>
+                            <dl class="contacts__item">
+                                <dt class="contacts__item-subtitle">Телефон</dt>
+                                <dd>+38 (050) 555 66 77</dd>
+                            </dl>
+                        </div>
                     </div>
 
 
@@ -253,7 +247,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <a class="logo" href="#">
@@ -279,7 +273,7 @@
 
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

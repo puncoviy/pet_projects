@@ -24,7 +24,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -479,6 +478,10 @@ a {
     padding-top: 50px;
 }
 
+.contacts__box {
+    display: block;
+}
+
 .contacts__item {
     margin-bottom: 20px;
 }
@@ -499,14 +502,14 @@ a {
 }
 
 .contacts__title {
-    color:#fff;
+    color: #fff;
     margin-bottom: 16px;
     margin-left: 53px;
     text-align: left;
 }
 
 .contacts__title::after {
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .contacts__input {
@@ -572,3 +575,280 @@ a {
 .footer {
     background-color: #21062A;
 }
+
+
+
+
+
+/* ----------------------------- */
+
+
+
+
+
+
+
+
+@media (max-width: 1140px) {
+    .services__item:hover {
+        width: 450px;
+    }
+
+    .benefits__img {
+        display: none;
+    }
+}
+
+/* ----------------------------- */
+
+@media (max-width: 1024px) {
+    .header__image {
+        width: 80%;
+    }
+
+    .services__inner {
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-bottom: 0;
+    }
+
+    .services__list {
+        order: -1;
+        width: 100%;
+    }
+
+    .services__item {
+        width: 100%;
+    }
+
+    .services__item:hover {
+        width: 100%;
+    }
+
+    .services__content {
+        width: 100%;
+    }
+
+}
+
+/* ----------------------------- */
+@media (max-width: 900px) {
+
+    .phone {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .header__title {
+        font-size: 52px;
+        line-height: 78px;
+        padding-top: 0;
+    }
+
+    .header__subtitle {
+        font-size: 28px;
+    }
+
+    .header__text {
+        margin-top: 10px;
+    }
+
+    .header__btn {
+        margin-bottom: 50px;
+    }
+
+    .services {
+        padding-top: 150px;
+    }
+
+    /* .contacts__info>.title::after {
+        top: 55px;
+        margin-left: -150px;
+    } */
+
+    .contacts__title {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* .contacts__title::after {
+        top: 55px;
+        margin-left: -172px;
+    } */
+
+    .conatcts__form {
+        padding: 50px 40px 57px;
+    }
+
+
+    /* ----------------------------- */
+
+    @media (max-width: 800px) {
+        .slider-center {
+          background-color: #fff;
+        }
+      }
+
+    /* ----------------------------- */
+
+
+    @media (max-width: 768px) {
+
+        .benefits__inner {
+            text-align: center;
+        }
+
+        .benefits__item {
+            margin-left: 0;
+        }
+
+        .benefits__item-text {
+            max-width: inherit;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .benefits-title {
+            margin-left: 0;
+        }
+
+        .contacts__inner {
+            display: block;
+        }
+
+        .contacts__box {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .contacts__input {
+            display: inline-block;
+        }
+
+    }
+
+    /* ----------------------------- */
+    @media (max-width: 600px) {
+
+        body {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .header__top {
+            padding: 30px 0 25px;
+        }
+
+        .header__content {
+            text-align: center;
+        }
+
+        .header__text {
+            padding: 0 90px;
+        }
+
+        .header__social {
+            justify-content: center;
+            margin-left: 0;
+        }
+
+        .title {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        .title::after {
+            top: 18px;
+        }
+
+        /* .contacts__title::after,
+        .contacts__info>.title::after {
+                top: 18px;
+                margin-left: 15px;
+        } */
+
+    /* ----------------------------- */
+    @media (max-width: 553px) {
+        .header__image {
+            position: static;
+            width: 100%;
+        }
+
+        .services {
+            padding-top: 45px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .title::after {
+            top: 40px;
+            margin-left: -100px;
+        }
+
+        .carousel>.container>.title::after {
+            margin-left: -180px;
+        }
+
+        .contacts__title::after {
+            margin-left: -140px;
+        }
+
+        .contacts__input {
+            width: 90%;
+        }
+    }
+    /* ----------------------------- */
+    @media (max-width: 520px) {
+        .header__top {
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .services__item {
+           height: auto;
+           padding: 10px 15px 10px 70px;
+        }
+
+        .services__item::before {
+            left: 15px;
+        }
+
+        .services__inner,
+        .benefits {
+            margin-bottom: 50px;
+        }
+    }
+
+      /* ----------------------------- */
+
+      @media (max-width: 370px) {
+        .btn--decor::before {
+            top: 25px;
+            right: -25px;
+            width: 48px;
+        }
+
+        .btn--decor::after {
+            margin-left: 81px;
+        }
+
+        .contacts__box {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+      }
+
+    /* ----------------------------- */
+
+    @media (max-width: 340px) {
+
+        .header__title {
+            font-size: 44px;
+            line-height: 50px;
+        }
+
+    }

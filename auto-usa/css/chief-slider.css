@@ -129,3 +129,37 @@
 .slider__indicators li.active {
   background-color: #5A0D67;
 }
+
+
+
+
+
+
+/* ------------------------------------------- */
+
+
+
+
+
+
+
+@media (max-width: 1220px) {
+  .slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .slider__item:hover {
+    background-color: #5A0D67;
+    color: #fff;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    border: none;
+  }
+}
